@@ -1,0 +1,26 @@
+# Default experiment config
+data:
+  train_dir: data/raw/train
+  test_dir: data/raw/test
+  sample_submission: data/raw/sample_submission.csv
+
+physical_scale:
+  z: 1.625
+  y: 0.40625
+  x: 0.40625
+
+matching:
+  max_distance_um: 7.0
+
+detection:
+  method: local_max          # placeholder: swap for trained model name
+  min_distance_voxels: 3
+  intensity_percentile_threshold: 99.0
+
+tracking:
+  method: nearest_neighbor    # placeholder: swap for learned/optimal linker
+  max_link_distance_um: 7.0
+  division_score_threshold: 0.5
+
+output:
+  submission_path: outputs/submissions/submission.csv

@@ -1,0 +1,13 @@
+numpy
+scipy
+scikit-image
+pandas
+zarr>=3.0
+numcodecs
+networkx
+matplotlib
+tqdm
+pyyaml
+# GEFF (graph exchange format) reader — swap for the actual package name
+# used by the competition if it differs from this placeholder.
+geff
